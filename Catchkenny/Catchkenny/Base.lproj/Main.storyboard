@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Catchkenny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEz-7W-CHc">
+                                <rect key="frame" x="64" y="155" width="265" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="q8c-9F-3RY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HighScore: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOw-Mu-2xH">
+                                <rect key="frame" x="64" y="745" width="265" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2X0-84-bT8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AOb-d3-seU">
+                                <rect key="frame" x="64" y="262" width="300" height="450"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LCW-kk-hoF">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" alpha="0.0" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="eZz-70-OVl">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="o6s-MZ-bKT" appends="YES" id="GPz-Tr-nTC"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" alpha="0.0" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="Rs9-mk-5aU">
+                                                <rect key="frame" x="100" y="0.0" width="100" height="150"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="VVD-79-QTU" appends="YES" id="FT2-tA-ddq"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" alpha="0.0" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="cyZ-Z6-mLH">
+                                                <rect key="frame" x="200" y="0.0" width="100" height="150"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="qQG-mQ-4FF" appends="YES" id="iAc-DY-EBB"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                        <gestureRecognizers/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8zf-6X-YY6">
+                                        <rect key="frame" x="0.0" y="150" width="300" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" alpha="0.0" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="rxO-vJ-Emx">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="iw5-kq-1x3" appends="YES" id="1re-L2-v8P"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" alpha="0.0" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="Rxz-Ql-rbu">
+                                                <rect key="frame" x="100" y="0.0" width="100" height="150"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="nOS-ZY-aPV" appends="YES" id="Ir5-mr-F1d"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" alpha="0.0" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="M93-E1-cJu">
+                                                <rect key="frame" x="200" y="0.0" width="100" height="150"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="a2T-gv-ZLF" appends="YES" id="q46-Ye-sIe"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7A8-Ou-4yq">
+                                        <rect key="frame" x="0.0" y="300" width="300" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" alpha="0.0" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="Ol4-bi-cds">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="oul-Hi-MJ2" appends="YES" id="geI-j0-r1L"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" alpha="0.0" tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="1AZ-Bz-IUc">
+                                                <rect key="frame" x="100" y="0.0" width="100" height="150"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Pba-Ax-Lab" appends="YES" id="ACE-z8-gRk"/>
+                                                </connections>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" alpha="0.0" tag="9" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="PkZ-b1-gDP">
+                                                <rect key="frame" x="200" y="0.0" width="100" height="150"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="pDI-uz-cx5" appends="YES" id="OYh-Yh-5dh"/>
+                                                </connections>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8zf-6X-YY6" firstAttribute="centerY" secondItem="AOb-d3-seU" secondAttribute="centerY" id="0gB-9k-YlE"/>
+                                    <constraint firstItem="8zf-6X-YY6" firstAttribute="top" secondItem="AOb-d3-seU" secondAttribute="top" constant="150" id="9qS-VD-0FD"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze3-2a-9cs">
+                                <rect key="frame" x="64" y="233" width="265" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7da-Mc-Cvz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AOb-d3-seU" secondAttribute="trailing" constant="29" id="DWZ-GG-zQ6"/>
+                            <constraint firstItem="ze3-2a-9cs" firstAttribute="top" secondItem="HEz-7W-CHc" secondAttribute="bottom" constant="44" id="JV9-0H-OlD"/>
+                            <constraint firstItem="HEz-7W-CHc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="Jdt-Av-w3h"/>
+                            <constraint firstItem="HEz-7W-CHc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="KV7-wl-PrJ"/>
+                            <constraint firstItem="ze3-2a-9cs" firstAttribute="leading" secondItem="AOb-d3-seU" secondAttribute="leading" id="QWA-J2-sqV"/>
+                            <constraint firstItem="AOb-d3-seU" firstAttribute="top" secondItem="ze3-2a-9cs" secondAttribute="bottom" constant="8" symbolic="YES" id="WdJ-xB-akk"/>
+                            <constraint firstItem="AOb-d3-seU" firstAttribute="leading" secondItem="iOw-Mu-2xH" secondAttribute="leading" id="Wgm-Ql-4fF"/>
+                            <constraint firstItem="iOw-Mu-2xH" firstAttribute="top" secondItem="AOb-d3-seU" secondAttribute="bottom" constant="33" id="Wpw-U9-l0w"/>
+                            <constraint firstItem="ze3-2a-9cs" firstAttribute="trailing" secondItem="iOw-Mu-2xH" secondAttribute="trailing" id="YKa-0g-UhN"/>
+                            <constraint firstItem="HEz-7W-CHc" firstAttribute="trailing" secondItem="ze3-2a-9cs" secondAttribute="trailing" id="efC-aR-7Cj"/>
+                            <constraint firstItem="HEz-7W-CHc" firstAttribute="leading" secondItem="ze3-2a-9cs" secondAttribute="leading" id="ogo-0Y-IGj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iOw-Mu-2xH" secondAttribute="bottom" constant="18" id="thP-qd-GFX"/>
+                            <constraint firstItem="HEz-7W-CHc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yLI-TV-EKM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="highScore" destination="iOw-Mu-2xH" id="PsU-dQ-Dv2"/>
+                        <outlet property="kenny1" destination="eZz-70-OVl" id="Z4f-Su-ptr"/>
+                        <outlet property="kenny2" destination="Rs9-mk-5aU" id="Tci-gv-SLT"/>
+                        <outlet property="kenny3" destination="cyZ-Z6-mLH" id="Qh1-3X-jEI"/>
+                        <outlet property="kenny4" destination="rxO-vJ-Emx" id="YjU-CI-cmj"/>
+                        <outlet property="kenny5" destination="Rxz-Ql-rbu" id="ARE-ww-wit"/>
+                        <outlet property="kenny6" destination="M93-E1-cJu" id="ne4-IE-wMd"/>
+                        <outlet property="kenny7" destination="Ol4-bi-cds" id="D9A-Mu-qGX"/>
+                        <outlet property="kenny8" destination="1AZ-Bz-IUc" id="D3j-cq-vbG"/>
+                        <outlet property="kenny9" destination="PkZ-b1-gDP" id="fpQ-pO-Mey"/>
+                        <outlet property="score" destination="ze3-2a-9cs" id="5c3-mP-id7"/>
+                        <outlet property="timer" destination="HEz-7W-CHc" id="Yf6-gp-uXa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="o6s-MZ-bKT">
+                    <connections>
+                        <action selector="kennyClicked:" destination="BYZ-38-t0r" id="X0k-ic-leu"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VVD-79-QTU">
+                    <connections>
+                        <action selector="kennyClicked:" destination="BYZ-38-t0r" id="Feg-3o-bHA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qQG-mQ-4FF">
+                    <connections>
+                        <action selector="kennyClicked:" destination="BYZ-38-t0r" id="duf-4f-TK1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="iw5-kq-1x3">
+                    <connections>
+                        <action selector="kennyClicked:" destination="BYZ-38-t0r" id="g4f-bV-WBq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="nOS-ZY-aPV">
+                    <connections>
+                        <action selector="kennyClicked:" destination="BYZ-38-t0r" id="lfw-fB-0uI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="a2T-gv-ZLF">
+                    <connections>
+                        <action selector="kennyClicked:" destination="BYZ-38-t0r" id="acO-tR-dvP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="oul-Hi-MJ2">
+                    <connections>
+                        <action selector="kennyClicked:" destination="BYZ-38-t0r" id="ims-hS-7yV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Pba-Ax-Lab">
+                    <connections>
+                        <action selector="kennyClicked:" destination="BYZ-38-t0r" id="1l8-Gc-fO6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="pDI-uz-cx5">
+                    <connections>
+                        <action selector="kennyClicked:" destination="BYZ-38-t0r" id="Tqv-1w-hlk"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="9.9236641221374047" y="118.30985915492958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kenny" width="271" height="367"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
