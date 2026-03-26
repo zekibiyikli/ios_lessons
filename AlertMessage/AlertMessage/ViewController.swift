@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: "Error", message: "Message", preferredStyle: UIAlertController.Style.alert)
         let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {(UIAlertAction) in
             print("Button Clicked")
-        } 
+        }
         alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
     }
