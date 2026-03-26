@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SequeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dk8-h9-eyC">
+                                <rect key="frame" x="97" y="118" width="199" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="UZx-fA-bQh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuq-CI-MQw">
+                                <rect key="frame" x="133" y="238" width="128" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to Second"/>
+                                <connections>
+                                    <segue destination="Uac-Ls-XIM" kind="show" identifier="toSecondVC" id="10F-jj-DST"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntZ-ut-MHO">
+                                <rect key="frame" x="125" y="373" width="145" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go To Second 2"/>
+                                <connections>
+                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oes-h6-0OV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fuq-CI-MQw" firstAttribute="centerX" secondItem="ntZ-ut-MHO" secondAttribute="centerX" id="2lA-bv-p2q"/>
+                            <constraint firstItem="Dk8-h9-eyC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="65b-gu-Yav"/>
+                            <constraint firstItem="ntZ-ut-MHO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="7NB-N3-N4X"/>
+                            <constraint firstItem="Dk8-h9-eyC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BI7-zU-gtq"/>
+                            <constraint firstItem="Fuq-CI-MQw" firstAttribute="top" secondItem="Dk8-h9-eyC" secondAttribute="bottom" constant="60" id="KJG-1q-gzX"/>
+                            <constraint firstItem="Dk8-h9-eyC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="R9m-mF-Xfe"/>
+                            <constraint firstItem="Dk8-h9-eyC" firstAttribute="centerX" secondItem="Fuq-CI-MQw" secondAttribute="centerX" id="iMg-zZ-aGm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ntZ-ut-MHO" secondAttribute="bottom" constant="376" id="lRb-Bf-Jss"/>
+                            <constraint firstItem="Fuq-CI-MQw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="t29-7N-WHd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Uac-Ls-XIM" kind="show" id="9l8-FM-Svg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274.04580152671753" y="105.63380281690141"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="vfJ-gW-zhN">
+            <objects>
+                <viewController id="Uac-Ls-XIM" customClass="SecondViewController" customModule="SequeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n6R-4H-GiN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2nd ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkD-v3-xhg">
+                                <rect key="frame" x="109" y="118" width="175" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="ilr-YQ-XG3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="İsim" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y73-76-JEl">
+                                <rect key="frame" x="138" y="222" width="116" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ujL-D1-QIY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y73-76-JEl" firstAttribute="centerX" secondItem="n6R-4H-GiN" secondAttribute="centerX" id="MgP-mB-781"/>
+                            <constraint firstItem="JkD-v3-xhg" firstAttribute="top" secondItem="ujL-D1-QIY" secondAttribute="top" constant="118" id="g9P-jU-gwc"/>
+                            <constraint firstItem="y73-76-JEl" firstAttribute="leading" secondItem="ujL-D1-QIY" secondAttribute="leading" constant="138" id="iq7-UI-w4v"/>
+                            <constraint firstItem="JkD-v3-xhg" firstAttribute="centerX" secondItem="y73-76-JEl" secondAttribute="centerX" id="p4K-o2-Lf2"/>
+                            <constraint firstItem="ujL-D1-QIY" firstAttribute="bottom" secondItem="y73-76-JEl" secondAttribute="bottom" constant="465" id="tSY-g7-qgN"/>
+                            <constraint firstItem="y73-76-JEl" firstAttribute="top" secondItem="JkD-v3-xhg" secondAttribute="bottom" constant="78" id="xJR-Nm-9V4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GQa-86-yjQ"/>
+                    <connections>
+                        <outlet property="textName" destination="y73-76-JEl" id="FZ6-u4-ree"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyq-cT-AO9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614.50381679389307" y="105.63380281690141"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="10F-jj-DST"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
