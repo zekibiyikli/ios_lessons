@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MLRecognization" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CC4-of-fbD">
+                                <rect key="frame" x="16" y="117.99999999999997" width="361" height="331.33333333333326"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Image" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn8-w1-3Eo">
+                                <rect key="frame" x="16" y="540" width="361" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="vwT-9P-Ype"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azg-kK-v31">
+                                <rect key="frame" x="155" y="649" width="83" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Change"/>
+                                <connections>
+                                    <action selector="changeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2q-Qc-c7Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CC4-of-fbD" firstAttribute="trailing" secondItem="Yn8-w1-3Eo" secondAttribute="trailing" id="3Mp-ZV-9Mx"/>
+                            <constraint firstItem="CC4-of-fbD" firstAttribute="leading" secondItem="Yn8-w1-3Eo" secondAttribute="leading" id="7Ch-h4-Lcn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Azg-kK-v31" secondAttribute="bottom" constant="100" id="Le0-a4-ySJ"/>
+                            <constraint firstItem="Yn8-w1-3Eo" firstAttribute="top" secondItem="CC4-of-fbD" secondAttribute="bottom" constant="90.666666666666742" id="Tbc-3t-QFf"/>
+                            <constraint firstItem="CC4-of-fbD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="h9T-Kg-tXt"/>
+                            <constraint firstItem="CC4-of-fbD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l8O-Vt-0gP"/>
+                            <constraint firstItem="CC4-of-fbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sjj-Zf-uhX"/>
+                            <constraint firstItem="Yn8-w1-3Eo" firstAttribute="centerX" secondItem="Azg-kK-v31" secondAttribute="centerX" id="xT4-Bn-Nak"/>
+                            <constraint firstItem="Azg-kK-v31" firstAttribute="top" secondItem="Yn8-w1-3Eo" secondAttribute="bottom" constant="88" id="y8Y-fo-MF2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="CC4-of-fbD" id="dYq-Wn-j7f"/>
+                        <outlet property="resultLabel" destination="Yn8-w1-3Eo" id="ohv-Pi-lSv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="118.30985915492958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
